@@ -15,7 +15,7 @@ const gpio = require('./lib/WebControl.js');
 *  (replace the default setup below using the actual pins you will use)  
 */
 gpio.setInput(11,13,15,19);
-gpio.setOutput(33,35,37,36); 
+gpio.setOutput(33,35,37,36,38,40); 
 
 var ip;
 function webStart(){
