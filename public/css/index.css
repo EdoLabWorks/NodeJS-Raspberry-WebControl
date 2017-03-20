@@ -16,7 +16,7 @@
 #badge1,#badge2,#badge3,#badge4,#badge5,#badge6{
 	padding: 0px  30px  0px  30px;
 	margin: 0px 5px 0px 5px;
-	width: 200px;
+	width: 190px;
 	height: 110px;
 	background: #330033;
 	font-size: 29px;
@@ -24,13 +24,13 @@
 #btnON1,#btnOFF1,#btnON2,#btnOFF2,#btnON3,#btnOFF3,#btnON4,#btnOFF4,#btnON5,#btnOFF5,#btnON6,#btnOFF6 {
 	padding: 0px  30px  0px  30px;
 	margin: 0px 5px 0px 5px;
-	width: 210px;
+	width: 190px;
 	height: 110px;
 	font-size: 29px;
 }
 #btnL1, #btnH1, #btnL2, #btnH2, #btnL3, #btnH3, #btnL4, #btnH4, #btnL5, #btnH5, #btnL6, #btnH6{
 	padding: 0px  30px  0px  30px;
-	margin: 0px 50px 0px 50px;
+	margin: 0px 30px 0px 50px;
 	width: 300px;
 	height: 80px;
 	font-size: 29px;
