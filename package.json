@@ -1,0 +1,18 @@
+{
+  "name": "NodeWebControl-Raspberry",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "array-gpio": "^1.1.30",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "ip": "^1.1.5",
+    "socket.io": "^1.4.8"
+  },
+  "author": {
+    "name": "Ed Alegrid",
+    "email": "ealegrid@gmail.com"
+  }
+}

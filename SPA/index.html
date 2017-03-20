@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html ng-app="WebControlApp">
+<head>
+	<title>NodeWebControl</title>
+	<meta name="author" content="Ed Alegrid"/>
+	<meta name="description" content="NodeJS WebControl App"/>
+	<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="/css/index.css" rel="stylesheet"/>
+	<!-- scripts -->
+	<script src="angular/angular.min.js"></script>
+	<script src="js/DeviceController.js"></script>
+	<script src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body ng-controller="DeviceController" id="b-total">
+<br/>
+<div class="container" >
+
+<div class="col-lg-12">
+<div class="panel panel-default">
+  	  <div class="panel-body">
+	  <form role="form">
+	      <a id="ProjectName" class="navbar-brand" href="#" >Node Web Control - Raspberry Pi</a>
+	  </form> 
+     </div> 
+   </div>		
+ </div>
+
+<div class="col-lg-12" id="ig1">
+<div class="panel panel-default">
+  	  <div class="panel-body">
+	  <form role="form">
+	  <button id="inbadge1" class="btn-lg btn-primary" type="button">
+	  Input <span id="span1" class="badge">1</span>
+          </button>
+	  <button id="btnH1" class="btn-md btn-info" ng-click="vm.sd('in0')" >OFF</button>
+	  <!--<button id="btnL1" class="btn-md btn-info" ng-click="vm.sd('')" >OFF</button>-->
+	  </form> 
+     </div> 
+   </div>		
+ </div>
+
+<div class="col-lg-12" id="ig2">
+<div class="panel panel-default">
+  	  <div class="panel-body">
+	  <form role="form">
+	  <button id="inbadge2" class="btn-lg btn-primary" type="button">
+	  Input <span id="span1" class="badge">2</span>
+          </button>
+	  <button id="btnH2" class="btn-md btn-info" ng-click="vm.sd('in1')" >OFF</button>
+	  <!--<button id="btnL2" class="btn-md btn-info" ng-click="vm.sd('')" >OFF</button>-->
+	  </form> 
+     </div> 
+   </div>		
+ </div>
+
+<div class="col-lg-12" id="ig3">
+<div class="panel panel-default">
+  	  <div class="panel-body">
+	  <form role="form">
+	  <button id="inbadge3" class="btn-lg btn-primary" type="button">
+	  Input <span id="span1" class="badge">3</span>
+          </button>
+	  <button id="btnH3" class="btn-md btn-info" ng-click="vm.sd('in2')" >OFF</button>
+	  <!--<button id="btnL3" class="btn-md btn-info" ng-click="vm.sd('')" >OFF</button>-->
+	  </form> 
+     </div> 
+   </div>		
+ </div>
+
+<div class="col-lg-12" id="ig4">
+<div class="panel panel-default">
+  	  <div class="panel-body">
+	  <form role="form">
+	  <button id="inbadge4" class="btn-lg btn-primary" type="button">
+	  Input <span id="span1" class="badge">4</span>
+          </button>
+	  <button id="btnH4" class="btn-md btn-info" ng-click="vm.sd('in3')" >OFF</button>
+	  <!--<button id="btnL4" class="btn-md btn-info" ng-click="vm.sd('')" >OFF</button>-->
+	  </form> 
+     </div> 
+   </div>		
+ </div>
+
+<div class="col-lg-12" id="ig5">
+<div class="panel panel-default">
+  	  <div class="panel-body">
+	  <form role="form">
+	  <button id="inbadge5" class="btn-lg btn-primary" type="button">
+	  Input <span id="span1" class="badge">5</span>
+          </button>
+	  <button id="btnH5" class="btn-md btn-info" ng-click="vm.sd('in4')" >OFF</button>
+	  <!--<button id="btnL5" class="btn-md btn-info" ng-click="vm.sd('')" >OFF</button>-->
+	  </form> 
+     </div> 
+   </div>		
+ </div>
+
+<div class="col-lg-12" id="ig6">
+<div class="panel panel-default">
+  	  <div class="panel-body">
+	  <form role="form">
+	  <button id="inbadge6" class="btn-lg btn-primary" type="button">
+	  Input <span id="span1" class="badge">6</span>
+          </button>
+	  <button id="btnH6" class="btn-md btn-info" ng-click="vm.sd('in5')" >OFF</button>
+	  <!--<button id="btnL6" class="btn-md btn-info" ng-click="vm.sd('')" >OFF</button>-->
+	  </form> 
+     </div> 
+   </div>		
+ </div>
+
+<!- OUTPUT ->	
+<div class="col-lg-12" id="og1">
+<div class="panel panel-default">
+  	  <div class="panel-body">
+	  <form role="form">
+	  <button id="badge1" class="btn-lg btn-primary" type="button">
+	  Output <span id="span1" class="badge">1</span>
+          </button>
+	  <button id="btnON1" class="btn-lg btn-info" ng-click="vm.sd('on0')" >ON</button>
+	  <button id="btnOFF1" class="btn-lg btn-info" ng-click="vm.sd('off0')" >OFF</button>
+	  </form> 
+     </div> 
+   </div>		
+ </div>
+	
+<div class="col-lg-12" id="og2">
+<div class="panel panel-default">
+	  <div class="panel-body">
+	  <form role="form">
+	  <button id="badge2" class="btn-lg btn-primary" type="button">
+	  Output <span id="span2" class="badge">2</span>
+	  </button>
+	  <button id="btnON2" class="btn-lg btn-info" ng-click="vm.sd('on1')" >ON</button>
+	  <button id="btnOFF2" class="btn-lg btn-info" ng-click="vm.sd('off1')" >OFF</button>
+	  </form>
+      </div>
+   </div>
+</div> 
+   
+<div class="col-lg-12" id="og3">
+<div class="panel panel-default">
+	  <div class="panel-body">
+	  <form role="form">
+	  <button id="badge3" class="btn-lg btn-primary" type="button">
+          Output <span id="span3" class="badge">3</span>
+	  </button>
+	  <button id="btnON3" class="btn-lg btn-info" ng-click="vm.sd('on2')"" >ON</button>
+ 	  <button id="btnOFF3" class="btn-lg btn-info" ng-click="vm.sd('off2')" >OFF</button>
+ 	  </form>
+      </div>
+   </div> 
+</div>
+
+<div class="col-lg-12" id="og4">
+<div class="panel panel-default">
+  	  <div class="panel-body"> 
+	  <form role="form">
+	  <button id="badge4" class="btn-lg btn-primary" type="button">
+	  Output <span id="span4" class="badge">4</span>
+	  </button>
+	  <button id="btnON4" class="btn-lg btn-info" ng-click="vm.sd('on3')" >ON</button>
+	  <button id="btnOFF4" class="btn-lg btn-info" ng-click="vm.sd('off3')" >OFF</button>
+	  </form>
+      </div>
+   </div>	
+</div>
+	
+<div class="col-lg-12" id="og5">
+<div class="panel panel-default">
+	  <div class="panel-body"> 
+	  <form role="form">
+	  <button id="badge5" class="btn-lg btn-primary" type="button">
+	  Output <span id="span5" class="badge">5</span>
+	  </button>
+	  <button id="btnON5" class="btn-lg btn-info" ng-click="vm.sd('on4')" >ON</button>
+	  <button id="btnOFF5" class="btn-lg btn-info" ng-click="vm.sd('off4')" >OFF</button>
+ 	  </form>
+      </div>
+   </div>
+</div>
+
+<div class="col-lg-12" id="og6">
+<div class="panel panel-default">
+	  <div class="panel-body">
+	  <form role="form">
+	  <button id="badge6" class="btn-lg btn-primary" type="button">
+	  Output <span id="span6" class="badge">6</span>
+	  </button>
+	  <button id="btnON6" class="btn-lg btn-info" ng-click="vm.sd('on5')" >ON</button>
+	  <button id="btnOFF6" class="btn-lg btn-info" ng-click="vm.sd('off5')" >OFF</button>
+	  </form>
+      </div>
+   </div>
+</div>
+
+<div id="footer" class="col-lg-8">
+	<footer class="footer" >
+	<p>&copy; Ed Alegrid 2016</p>
+	</footer>
+</div>
+
+</div> <!-- container -->  
+
+	<!-- socket.io client setup  -->
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="js/DeviceIOSocket.js"></script>
+	<script></script>
+	</body>
+</html>
+
+
