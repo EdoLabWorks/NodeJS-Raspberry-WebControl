@@ -1,6 +1,6 @@
 ## NodeJS-WebControl-Raspberry Pi
 
-A start-up web control project for Raspberry Pi 3 using array-rpio, express, angular and socket.io.
+A start-up web control project for Raspberry Pi 3 using array-gpio, express, angular and socket.io.
 
 Turn ON/OFF actuators/peripherals connected in your Raspberry Pi 3 using your mobile device browser.
 
@@ -27,14 +27,14 @@ GPIO.setOutput(out1, out2 ... out6);
 
 ### Installation 
 
-git clone or download the application from your Raspberry Pi computer.
+git clone or download the application in your Raspberry Pi computer.
 
 In the root folder, install all dependencies.
 ~~~~
 $ npm install
 ~~~~
 
-Start app.js in the root folder. 
+Run the application as shown below. 
 ~~~~
 $ node app
 ~~~~
