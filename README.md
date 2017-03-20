@@ -2,7 +2,7 @@
 
 A start-up web control project for Raspberry Pi 3 using array-gpio, express, angular and socket.io.
 
-Turn ON/OFF actuators/peripherals using your mobile device.
+Turn ON/OFF the actuators/peripherals connected to your Raspberry Pi 3 using your mobile device.
 
 Note:
  
@@ -10,12 +10,14 @@ Works on node v5.0 LTS or v6.5 latest and above.
 
 ### Raspberry Pin Setup
 
-Using the GPIO physical pin number, choose the pins (6 max.) you want to use as inputs and outputs.
+Using the GPIO physical pin number, choose the pins you want to use as inputs and outputs.
 
-Configure the pins in the app.js file as shown below. 
+Configure the pins in the app.js file as shown below. Inputs are optional.
+You only need outputs to control your Raspberry Pi.
+However, for inputs you can monitor its current state in real-time.
 ~~~~
-gpio.setInput(pin1, pin2, ... pin6); // input
-gpio.setOutput(pin1, pin2 ... pin6); // output
+gpio.setInput(pin1, pin2, ... pin6); // max. 6 inputs
+gpio.setOutput(pin1, pin2 ... pin6); // max. 6 outputs
 ~~~~
 
 ### Features
