@@ -1,8 +1,8 @@
 {
-  "name": "NodeWebControl-Raspberry",
-  "version": "1.0.0",
+  "name": "NodeJS-Raspberry-WebControl",
+  "version": "1.0.1",
   "scripts": {
-    "start": "node app.js"
+  "start": "node app.js"
   },
   "dependencies": {
     "array-gpio": "^1.1.30",
@@ -11,6 +11,18 @@
     "ip": "^1.1.5",
     "socket.io": "^1.4.8"
   },
+  "keywords": [
+    "gpio",
+    "pi",
+    "raspberry",
+    "raspberrypi",
+    "raspberry pi",
+    "raspberry pi 3",
+    "rpi",
+    "rpio",
+    "web control",
+    "remote control"
+  ],
   "author": {
     "name": "Ed Alegrid",
     "email": "ealegrid@gmail.com"
