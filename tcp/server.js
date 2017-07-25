@@ -1,5 +1,6 @@
 /* Author: Ed Alegrid 3/13/2017 */
-'use strict'
+'use strict';
+
 const net = require('net');
 const IOControlModule = require('../lib/ipcheck.js');
 const Web = require('../lib/WebControl.js');
@@ -27,7 +28,7 @@ exports.start = (io, port, cb) => {
         return;
       }
       exports.remoteIP;
-      console.log('\n**** Tcp Control ****');
+      console.log('\n*** Tcp Control ***');
       //console.log('remote client data (port: 51111): ', _cd);
       if(_cd === opCode.state) {
         Web.Control(_cd);
@@ -49,11 +50,11 @@ exports.start = (io, port, cb) => {
     }
   });
   server.on('error', (error) => {
-  console.log('' + error);
-  server.destroy();
+    console.log('' + error);
+    server.destroy();
   });
   server.on('end', () => {
-  server.unref();
+    server.unref();
   });
   }).listen(port, () => { 
 
