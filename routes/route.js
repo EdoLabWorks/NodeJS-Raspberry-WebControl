@@ -1,5 +1,6 @@
 /* Author: Ed Alegrid 10/2/2016 */
-'use strict'
+'use strict';
+
 var device = require('./device.js'); 
 
 exports.load = function(app){
